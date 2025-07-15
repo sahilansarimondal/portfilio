@@ -1,16 +1,23 @@
-import { Code, Terminal } from "lucide-react";
+import {
+  Code,
+  Terminal,
+  Layers,
+  Braces,
+  Database,
+  ServerCog,
+} from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export function About() {
   const skills = [
-    "TypeScript",
-    "React",
     "Next.js",
-    "Node.js",
+    "tRPC",
+    "Server Components",
     "Tailwind CSS",
-    "GraphQL",
-    "PostgreSQL",
+    "Prisma/Drizzle",
     "Docker",
+    "CI/CD",
+    "ASG",
   ];
 
   return (
@@ -26,9 +33,9 @@ export function About() {
             accessible, and responsive user interfaces.
           </p>
           <p className="text-muted-foreground">
-            When I&apos;m not coding, you can find me contributing to open-source
-            projects, writing technical articles, or exploring new web
-            technologies.
+            When I&apos;m not coding, you can find me contributing to
+            open-source projects, writing technical articles, or exploring new
+            web technologies.
           </p>
 
           <div className="mt-8">
@@ -49,26 +56,26 @@ export function About() {
         <div className="space-y-6">
           <Card className="border-primary">
             <CardHeader className="flex flex-row items-center gap-3">
-              <Code className="h-6 w-6 text-primary" />
-              <h3 className="text-lg font-semibold">Frontend Development</h3>
+              <Braces className="h-6 w-6 text-primary" />
+              <h3 className="text-lg font-semibold">Full-Stack Development</h3>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Creating responsive, accessible, and performant user interfaces
-                with modern React ecosystem.
+                Creating responsive, SEO Friendly, performant SaaS and Web Apps
+                with modern Next.js ecosystem.
               </p>
             </CardContent>
           </Card>
 
           <Card className="border-primary">
             <CardHeader className="flex flex-row items-center gap-3">
-              <Terminal className="h-6 w-6 text-primary" />
-              <h3 className="text-lg font-semibold">Backend Development</h3>
+              <ServerCog className="h-6 w-6 text-primary" />
+              <h3 className="text-lg font-semibold">DevOps </h3>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Building RESTful APIs, GraphQL servers, and database
-                architectures with Node.js and TypeScript.
+                Simplifying complex deployments with battle-tested CI/CD,
+                Docker, and cloud-native strategies.
               </p>
             </CardContent>
           </Card>

@@ -10,8 +10,8 @@ export default function Home() {
     <main className="w-8/12 mx-auto px-4">
       <Navbar />
       <Hero />
-      <About />
       <Projects />
+      <About />
       <Contact />
       <Footer />
     </main>
