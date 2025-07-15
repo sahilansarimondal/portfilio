@@ -21,12 +21,12 @@ export function About() {
         <div>
           <h3 className="text-xl font-semibold mb-4">My Journey</h3>
           <p className="text-muted-foreground mb-4">
-            I'm a passionate developer with 5+ years of experience building
+            I&apos;m a passionate developer with 5+ years of experience building
             scalable web applications. I specialize in creating performant,
             accessible, and responsive user interfaces.
           </p>
           <p className="text-muted-foreground">
-            When I'm not coding, you can find me contributing to open-source
+            When I&apos;m not coding, you can find me contributing to open-source
             projects, writing technical articles, or exploring new web
             technologies.
           </p>

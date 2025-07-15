@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -9,8 +10,10 @@ export function Hero() {
         <div className="relative bg-background rounded-full p-1">
           <div className="bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full p-1">
             <div className="bg-background rounded-full w-24 h-24">
-              <img
+              <Image
                 src="/profile2.png"
+                height={240}
+                width={240}
                 alt="Profile"
                 className="w-full h-full rounded-full"
               />
@@ -20,7 +23,7 @@ export function Hero() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold mt-8">
-        Hi, I'm{" "}
+        Hi, I&apos;m{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
           Sahil
         </span>
