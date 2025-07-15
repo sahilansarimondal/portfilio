@@ -1,11 +1,4 @@
-import {
-  Code,
-  Terminal,
-  Layers,
-  Braces,
-  Database,
-  ServerCog,
-} from "lucide-react";
+import { Braces, ServerCog } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export function About() {
