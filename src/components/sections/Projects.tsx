@@ -1,11 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { HoverEffect } from "../ui/card-hover-effect";
 
 export function Projects() {
   const projects = [
@@ -25,13 +18,20 @@ export function Projects() {
       description: "Real-time weather forecasts with interactive maps",
       tech: ["TypeScript", "Chart.js", "Weather API"],
     },
+    {
+      title: "Screener AI",
+      description: "Real-time weather forecasts with interactive maps",
+      tech: ["TypeScript", "Chart.js", "Weather API"],
+    },
   ];
 
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-3xl font-bold mb-12 text-center">My Projects</h2>
+    <section id="projects" className="py-4">
+      <h2 className="text-3xl font-bold px-4 py-4">My Projects</h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <HoverEffect items={projects} />
+
+      {/* <div className="grid md:grid-cols-2  gap-8">
         {projects.map((project, index) => (
           <Card key={index} className="h-full flex flex-col">
             <CardHeader className="pb-3">
@@ -61,7 +61,7 @@ export function Projects() {
             </CardFooter>
           </Card>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

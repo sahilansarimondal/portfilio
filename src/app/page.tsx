@@ -1,17 +1,18 @@
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import LifeChangelog from "@/components/sections/LifeChangeLog";
 
 export default function Home() {
   return (
-    <main className="w-8/12 mx-auto px-4">
+    <main className="max-w-4xl w-full bg-white dark:bg-black mx-auto  px-4">
       <Navbar />
-      <Hero />
+      <HeroSection />
+      {/* <ContentSection /> */}
       <Projects />
-      <About />
+      <LifeChangelog />
       <Contact />
       <Footer />
     </main>
